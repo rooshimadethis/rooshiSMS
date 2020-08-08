@@ -1,3 +1,19 @@
+# rooshiSMS (A qkSMS fork)
+
+## Description
+I'm creating this fork of qkSMS because I haven't been completely satisfied with the messaging apps I've been using in terms of style and functionality. I also enjoy personalizing things so this will likely have some personal touches and jokes throughout.
+
+## //TODO
+- [ ] Sync texts between phones with and without Network access
+- [ ] Separate "real" contacts and bot contacts (eg. OTP codes)
+- [ ] "Copy code" notification action like Google Messages
+- [ ] Reminder to send drafts if written but not sent
+- [ ] Sentiment and analytics for conversations
+- [ ] Unique notification LED blinks for users
+- [ ] Various rooshi-like personalization
+
+---
+
 ![QKSMS](https://user-images.githubusercontent.com/4358785/39079306-a5a409b6-44e5-11e8-8589-b4acd63b636e.jpg)
 
 # QKSMS
