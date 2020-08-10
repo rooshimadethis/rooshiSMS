@@ -66,6 +66,8 @@ class ReceiveSms @Inject constructor(
                     // Add the message to the db
                     val message = messageRepo.insertReceivedSms(it.subId, address, body, time)
 
+                    //ROOSHI send message to firebase if phone with network
+
                     when (action) {
                         is BlockingClient.Action.Block -> {
                             messageRepo.markRead(message.threadId)

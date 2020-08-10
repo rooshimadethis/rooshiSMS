@@ -53,6 +53,8 @@ class SendMessage @Inject constructor(
                 }
                 messageRepo.sendMessage(params.subId, threadId, params.addresses, params.body, params.attachments,
                         params.delay)
+
+                //ROOSHI if on network send to firebase, if not on network send to firebase :)
             }
             .mapNotNull {
                 // If the threadId wasn't provided, then it's probably because it doesn't exist in Realm.
