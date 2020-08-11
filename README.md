@@ -14,6 +14,7 @@ I'm creating this fork of qkSMS because I haven't been completely satisfied with
 - [ ] Reminder to send drafts if written but not sent
 - [ ] Sentiment and analytics for conversations
 - [ ] Unique notification LED blinks for users
+- [ ] Remove QKSMS+ billing etc.
 - [ ] Various rooshi-like personalization
 
 ---
