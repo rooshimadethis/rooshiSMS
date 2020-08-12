@@ -68,7 +68,8 @@
 
     <string name="login_title">SMS Mirroring</string>
     <string name="login_subtitle">Log in with rooshiSMS</string>
-    <string name="login_explanation">Send and receive messages from phones and tablets with the rooshiSMS app installed*</string>
+    <string name="login_explanation">Send and receive messages from phones and tablets with no SIM Cards!</string>
+    <string name="login_explanation_2">Each device needs to be logged into your rooshiSMS account, have wifi access, and at least one device needs a SIM card and network access</string>
     <string name="login_goals">*Login with email/password and web messaging may be implemented later</string>
     <string name="login_skip"><u>or skip login</u></string>
 
