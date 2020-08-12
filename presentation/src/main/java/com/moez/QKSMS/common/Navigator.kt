@@ -36,6 +36,7 @@ import com.moez.QKSMS.feature.backup.BackupActivity
 import com.moez.QKSMS.feature.blocking.BlockingActivity
 import com.moez.QKSMS.feature.compose.ComposeActivity
 import com.moez.QKSMS.feature.conversationinfo.ConversationInfoActivity
+import com.moez.QKSMS.feature.firebaselogin.LoginActivity
 import com.moez.QKSMS.feature.gallery.GalleryActivity
 import com.moez.QKSMS.feature.notificationprefs.NotificationPrefsActivity
 import com.moez.QKSMS.feature.plus.PlusActivity
@@ -93,6 +94,11 @@ class Navigator @Inject constructor(
             intent.putExtra(Telephony.Sms.Intents.EXTRA_PACKAGE_NAME, context.packageName)
             context.startActivity(intent)
         }
+    }
+
+    fun showLogin() {
+        val intent = Intent(context, LoginActivity::class.java)
+        startActivity(intent)
     }
 
     fun showCompose(body: String? = null, images: List<Uri>? = null) {
@@ -212,8 +218,8 @@ class Navigator @Inject constructor(
     fun showSupport() {
         val intent = Intent(Intent.ACTION_SENDTO)
         intent.data = Uri.parse("mailto:")
-        intent.putExtra(Intent.EXTRA_EMAIL, arrayOf("moez@qklabs.com"))
-        intent.putExtra(Intent.EXTRA_SUBJECT, "QKSMS Support")
+        intent.putExtra(Intent.EXTRA_EMAIL, arrayOf("rooshipatidar@gmail.com"))
+        intent.putExtra(Intent.EXTRA_SUBJECT, "rooshiSMS Support")
         intent.putExtra(Intent.EXTRA_TEXT, StringBuilder("\n\n")
                 .append("\n\n--- Please write your message above this line ---\n\n")
                 .append("Package: ${context.packageName}\n")

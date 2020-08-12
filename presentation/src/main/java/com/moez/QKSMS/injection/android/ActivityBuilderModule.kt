@@ -25,6 +25,8 @@ import com.moez.QKSMS.feature.compose.ComposeActivityModule
 import com.moez.QKSMS.feature.contacts.ContactsActivity
 import com.moez.QKSMS.feature.contacts.ContactsActivityModule
 import com.moez.QKSMS.feature.conversationinfo.ConversationInfoActivity
+import com.moez.QKSMS.feature.firebaselogin.LoginActivity
+import com.moez.QKSMS.feature.firebaselogin.LoginActivityModule
 import com.moez.QKSMS.feature.gallery.GalleryActivity
 import com.moez.QKSMS.feature.gallery.GalleryActivityModule
 import com.moez.QKSMS.feature.main.MainActivity
@@ -48,6 +50,10 @@ abstract class ActivityBuilderModule {
     @ActivityScope
     @ContributesAndroidInjector(modules = [MainActivityModule::class])
     abstract fun bindMainActivity(): MainActivity
+
+    @ActivityScope
+    @ContributesAndroidInjector(modules = [LoginActivityModule::class])
+    abstract fun bindLoginActivity(): LoginActivity
 
     @ActivityScope
     @ContributesAndroidInjector(modules = [PlusActivityModule::class])

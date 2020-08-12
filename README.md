@@ -6,16 +6,25 @@ I'm creating this fork of qkSMS because I haven't been completely satisfied with
 ## IN PROGRESS
 
 - [ ] Sync texts between phones with and without Network access
-  - [ ] Connect to Firebase
+  - [x] Connect to Firebase
+  - [ ] Google/Firebase login on install
+    - [ ] new Activity that opens on first start
+    - [ ] Button also in left side bar
 
 ## //TODO
 - [ ] Separate "real" contacts and bot contacts (eg. OTP codes)
-- [ ] "Copy code" notification action like Google Messages
 - [ ] Reminder to send drafts if written but not sent
 - [ ] Sentiment and analytics for conversations
 - [ ] Unique notification LED blinks for users
 - [ ] Remove QKSMS+ billing etc.
-- [ ] Various rooshi-like personalization
+- [ ] Various rooshi-like personalizations
+
+
+
+### Stretch goals
+
+- [ ] Login with email and password
+- [ ] Web messenger like messages.google.com
 
 ---
 

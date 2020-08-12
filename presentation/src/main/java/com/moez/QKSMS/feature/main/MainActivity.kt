@@ -56,6 +56,7 @@ import com.moez.QKSMS.feature.blocking.BlockingDialog
 import com.moez.QKSMS.feature.changelog.ChangelogDialog
 import com.moez.QKSMS.feature.conversations.ConversationItemTouchCallback
 import com.moez.QKSMS.feature.conversations.ConversationsAdapter
+import com.moez.QKSMS.feature.firebaselogin.LoginActivity
 import com.moez.QKSMS.manager.ChangelogManager
 import com.moez.QKSMS.repository.SyncRepository
 import com.uber.autodispose.android.lifecycle.scope
@@ -176,6 +177,9 @@ class MainActivity : QkThemedActivity(), MainView {
         if (Build.VERSION.SDK_INT <= 22) {
             binding.toolbarSearch.setBackgroundTint(resolveThemeColor(R.attr.bubbleColor))
         }
+
+        //ROOSHI start login activity. Where to check to see if its the first login?
+        navigator.showLogin()
     }
 
     override fun onNewIntent(intent: Intent?) {
