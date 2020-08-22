@@ -152,6 +152,10 @@ dependencies {
     implementation "com.uber.rxdogtag:rxdogtag:$rxdogtag_version"
     implementation "com.uber.rxdogtag:rxdogtag-autodispose:$rxdogtag_version"
 
+    //firebase
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.firebaseui:firebase-ui-auth:6.2.0'
+
     //google sign in button
     implementation 'com.shobhitpuri.custombuttons:google-signin:1.1.0'
 

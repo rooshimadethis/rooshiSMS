@@ -7,9 +7,11 @@ I'm creating this fork of qkSMS because I haven't been completely satisfied with
 
 - [ ] Sync texts between phones with and without Network access
   - [x] Connect to Firebase
-  - [ ] Google/Firebase login on install
+  - [ ] Google/Firebase sync login
     - [ ] new Activity that opens on first start
     - [ ] Button also in left side bar
+    - [ ] Add fake text bubbles to login screen
+    - [ ] Create domain usecase to connect data and presentation to save user in data module
 
 ## //TODO
 - [ ] Separate "real" contacts and bot contacts (eg. OTP codes)
@@ -25,6 +27,14 @@ I'm creating this fork of qkSMS because I haven't been completely satisfied with
 
 - [ ] Login with email and password
 - [ ] Web messenger like messages.google.com
+
+
+
+#### Notes to self
+
+* *Interactor*Receiver class will create the observable for a value using ".execute()". *Interactor* impl's are where the work is being done. ".execute()" in the interactor class is building observables, subscribing etc.
+* I think I should add firebase receiving stuff to data/.../SmsReceiver and SendSmsReceiver
+  * Write firebase syncing code before user storage to find out the scope of the user
 
 ---
 

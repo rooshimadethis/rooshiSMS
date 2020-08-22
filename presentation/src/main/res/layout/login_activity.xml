@@ -32,7 +32,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="8dp" />
+                android:layout_height="16dp" />
 
             <com.moez.QKSMS.common.widget.QkTextView
                 android:id="@+id/qkTextView3"
@@ -43,7 +43,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="16dp" />
+                android:layout_height="32dp" />
 
             <com.shobhitpuri.custombuttons.GoogleSignInButton
                 android:id="@+id/googleSignInButton"
