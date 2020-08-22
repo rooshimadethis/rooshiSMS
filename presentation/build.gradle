@@ -20,6 +20,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'realm-android' // Realm needs to be before Kotlin or the build will fail
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
@@ -159,6 +160,8 @@ dependencies {
     //google sign in button
     implementation 'com.shobhitpuri.custombuttons:google-signin:1.1.0'
 
+    //firebase
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
 
     // testing
     androidTestImplementation("androidx.test.espresso:espresso-core:$espresso_version", {

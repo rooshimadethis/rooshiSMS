@@ -22,7 +22,7 @@ import javax.inject.Inject
 //Activity still controls a lot of the functionality of the feature
 class LoginActivity : QkThemedActivity(), LoginView {
     companion object {
-        private const val signInRequestCode= 111
+        private const val SIGN_IN_REQUEST_CODE = 111
     }
 
     @Inject lateinit var viewModelFactory: ViewModelProvider.Factory
@@ -52,13 +52,13 @@ class LoginActivity : QkThemedActivity(), LoginView {
 
         val signInIntent = googleSignInClient.signInIntent
 
-        startActivityForResult(signInIntent, signInRequestCode)
+        startActivityForResult(signInIntent, SIGN_IN_REQUEST_CODE)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         when (requestCode) {
-            signInRequestCode -> {
+            SIGN_IN_REQUEST_CODE -> {
                 val task = GoogleSignIn.getSignedInAccountFromIntent(data)
                 try {
                     val account = task.getResult(ApiException::class.java)!!
